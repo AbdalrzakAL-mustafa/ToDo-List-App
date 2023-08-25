@@ -1,0 +1,86 @@
+.app {
+  width: 50%;
+
+  margin: 0 auto;
+}
+.app .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #512d90;
+  color: #fff;
+}
+.app .header h1 {
+  flex-grow: 1;
+  margin: 0;
+  text-align: center;
+}
+
+.app .tasks {
+  background-color: #eee;
+  padding: 10px;
+}
+.app .tasks .task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 5px;
+  border-bottom: 3px solid #828282;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.app .tasks .task:hover {
+  box-shadow: 6px -2px 9px 1px #c3cada;
+}
+.app .tasks .task.done {
+  background-color: #93fd95;
+}
+.app .tasks .task .content {
+  text-align: right;
+}
+.app .tasks .task .content p {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0 0 5px 0;
+}
+.app .tasks .task .content .date {
+  color: #777;
+}
+.app .tasks .task .actions {
+  flex-basis: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+.app .icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+}
+.app .header .icon {
+  color: #777;
+  background-color: #fff;
+  cursor: pointer;
+}
+.app .tasks .task .actions .edit {
+  background-color: #4f59d0;
+}
+.app .tasks .task .actions .status {
+  background-color: #008a1e;
+}
+.app .tasks .task .actions .delete {
+  background-color: #680002;
+}
